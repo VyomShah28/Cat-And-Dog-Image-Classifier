@@ -9,5 +9,5 @@ This is an Android app built to classify images of cats and dogs using a machine
 * TensorFlow Lite: Deep learning framework optimized for mobile.
 * Java: Programming language used in the app.
 # Usage
-1.) Run the app on an Android device or emulator.
-2.) Upload or capture an image, and the app will classify it as either a cat or a dog!
+* Run the app on an Android device or emulator
+* Upload or capture an image, and the app will classify it as either a cat or a dog!
