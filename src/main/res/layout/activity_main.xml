@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="6"
+    android:background="@drawable/dog_cat"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        tools:ignore="UselessLeaf,UselessParent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hey There!!"
+            android:textSize="50dp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            tools:ignore="HardcodedText,RtlHardcoded,SpUsage" >
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        tools:ignore="UselessLeaf">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This this the Image Recognition App where you can feed in the image of a cat or a dog"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            tools:ignore="HardcodedText,SpUsage">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="72dp"
+            android:text="lets Get Started"
+            android:layout_marginLeft="120dp"
+            android:background="@drawable/button"
+            tools:ignore="HardcodedText,RtlHardcoded">
+
+        </Button>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

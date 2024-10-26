@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="6"
+    tools:context=".RecognitionActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        tools:ignore="UselessParent">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click here to open an image"
+            android:translationZ="1dp"
+            android:layout_centerInParent="true"
+            android:textSize="25dp"
+            tools:ignore="HardcodedText,SpUsage">
+        </TextView>
+        <ImageView
+            android:id="@+id/openImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/dotted_border"
+            android:clickable="true"
+            android:focusable="true"
+            android:scaleType="centerCrop"
+            tools:ignore="ContentDescription,HardcodedText" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        >
+        <Button
+            android:id="@+id/predictButton"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:text="Predict"
+            android:background="@drawable/button"
+            tools:ignore="HardcodedText">
+
+        </Button>
+
+        <TextView
+            android:id="@+id/answerview"
+            android:layout_width="200dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="250dp"
+            android:layout_marginLeft="100dp"
+            android:textSize="35dp"
+            android:text="hello"
+            android:gravity="center"
+            tools:ignore="HardcodedText,RtlHardcoded,SpUsage">
+
+        </TextView>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
